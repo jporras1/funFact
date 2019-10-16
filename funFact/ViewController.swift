@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     let didYouKnowLabel: UILabel = {
         let label = UILabel()
         //label.backgroundColor = .red
-        label.font = UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.bold)
-        label.textColor = .white
+        label.font = UIFont(name: "HelveticaNeue-Light", size: 22) //.systemFont(ofSize: 22, weight: UIFont.Weight.bold)
+        label.textColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5)
         label.text = "Did you know?"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     let funFactLabel: UILabel = {
        let label = UILabel()
         //label.backgroundColor = .red
-        label.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.bold)
+        label.font = UIFont(name: "HelveticaNeue-Light", size: 24) //.systemFont(ofSize: 24, weight: UIFont.Weight.bold)
         label.textColor = .white
         label.numberOfLines = 0
         label.text = "You are born with 300 bones; by the time you are an adult you will have 206."
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         button.setTitle("Show another fun fact", for: UIControl.State.normal)
         //button.setTitleColor(UIColor.white, for: UIControl.State.normal)
         //button.tintColor = UIColor.gray
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
+        button.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 18) //.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
         button.addTarget(self, action: #selector(showFunFact), for: UIControl.Event.touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
