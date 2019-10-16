@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         //label.backgroundColor = .red
         label.font = UIFont(name: "HelveticaNeue-Light", size: 22) //.systemFont(ofSize: 22, weight: UIFont.Weight.bold)
-        label.textColor = UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5)
+        label.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5)
         label.text = "Did you know?"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
